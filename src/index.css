@@ -29,32 +29,3 @@ body {
   padding: 16px;
   justify-content: center;
 }
-
-.product-block {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.product-block img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.product-block img {
-  transition: opacity 0.2s ease-in-out;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.fade-out {
-  opacity: 0;
-}
-
-.fade-in {
-  opacity: 1;
-}

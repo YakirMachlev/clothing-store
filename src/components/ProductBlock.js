@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ProductBlock.css';
 
 export default function ProductBlock({ images }) {
   const [index, setIndex] = useState(0);
@@ -9,7 +10,7 @@ export default function ProductBlock({ images }) {
     setTimeout(() => {
       setIndex((prev) => (prev + 1) % images.length);
       setFade(false);
-    }, 150); // match the transition time
+    }, 150);
   };
 
   return (
@@ -20,6 +21,16 @@ export default function ProductBlock({ images }) {
         loading="lazy"
         className={fade ? 'fade-out' : 'fade-in'}
       />
+      {images.length > 1 && (
+        <div className="dots">
+          {images.map((_, i) => (
+            <span
+              key={i}
+              className={`dot ${i === index ? 'active' : ''}`}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
