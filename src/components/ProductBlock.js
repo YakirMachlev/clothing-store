@@ -10,7 +10,7 @@ export default function ProductBlock({ images }) {
     setTimeout(() => {
       setIndex((prev) => (prev + 1) % images.length);
       setFade(false);
-    }, 150);
+    }, 120);
   };
 
   return (

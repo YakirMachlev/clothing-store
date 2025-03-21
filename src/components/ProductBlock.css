@@ -51,3 +51,10 @@
 .fade-in {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .product-block {
+        width: 165px;
+        height: 165px;
+    }
+}

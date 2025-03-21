@@ -9,28 +9,71 @@ body {
   align-items: center;
   background: #222;
   color: white;
-  padding: 20px 30px; /* thicker vertically */
-  min-height: 30px;   /* optional: enforce thicker header */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional: adds depth */
+  padding: 15px 20px;
+  min-height: 70px;
+  flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.header h1 {
+  margin-bottom: 5px; /* Reduce from default (usually 20px) */
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: white;
   text-decoration: none;
+  color: white;
+  white-space: nowrap; /* Prevent breaking */
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
 }
 
 .nav a {
-  margin: 0 10px;
   color: white;
   text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 16px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Ensures the grid is centered */
+  justify-content: center; /* Center content */
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .logo {
+    font-size: 1.3rem; /* Reduce size slightly on mobile */
+  }
+
+  .nav {
+    margin-top: 0px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Ensure two items per row */
+    padding: 10px;
+  }
 }
