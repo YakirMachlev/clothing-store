@@ -44,6 +44,35 @@ h2 {
   margin: 0 auto;
 }
 
+.payment-link {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.payment-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+  border: 1px solid #ddd;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.payment-link a:hover {
+  background-color: #eee;
+}
+
+.payment-logo {
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 768px) {
   .category-grid {
     flex-direction: column;
