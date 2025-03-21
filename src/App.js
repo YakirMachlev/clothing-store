@@ -11,10 +11,10 @@ export default function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shirts" element={<Shirts />} />
-        <Route path="/pants" element={<Pants />} />
-        <Route path="/kitchen" element={<Kitchen />} />
+        <Route path="/clothing-store/" element={<Home />} />
+        <Route path="/clothing-store/shirts" element={<Shirts />} />
+        <Route path="/clothing-store/pants" element={<Pants />} />
+        <Route path="/clothing-store/kitchen" element={<Kitchen />} />
       </Routes>
     </Router>
   );
