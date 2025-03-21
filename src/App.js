@@ -8,13 +8,13 @@ import Header from './components/Header';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/clothing-store">
       <Header />
       <Routes>
-        <Route path="/clothing-store/" element={<Home />} />
-        <Route path="/clothing-store/shirts" element={<Shirts />} />
-        <Route path="/clothing-store/pants" element={<Pants />} />
-        <Route path="/clothing-store/kitchen" element={<Kitchen />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/shirts" element={<Shirts />} />
+        <Route path="/pants" element={<Pants />} />
+        <Route path="/kitchen" element={<Kitchen />} />
       </Routes>
     </Router>
   );

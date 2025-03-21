@@ -9,11 +9,16 @@ body {
   align-items: center;
   background: #222;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 30px; /* thicker vertically */
+  min-height: 30px;   /* optional: enforce thicker header */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional: adds depth */
 }
 
 .logo {
-  font-size: 1.5em;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .nav a {
