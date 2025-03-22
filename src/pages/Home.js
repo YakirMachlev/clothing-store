@@ -8,12 +8,31 @@ export default function Home() {
       <h2 className="welcome-header">Welcome to My Second Hand Store</h2>
 
       <div className="category-grid">
-        <Link to="/shirts" className="category-card">Shirts</Link>
-        <Link to="/pants" className="category-card">Pants</Link>
-        <Link to="/kitchen" className="category-card">Kitchen</Link>
+        <Link
+          to="/shirts"
+          className="category-card"
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/category-backgrounds/shirts-bg.jpg)` }}
+        >
+          Shirts
+        </Link>
+        <Link
+          to="/pants"
+          className="category-card"
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/category-backgrounds/pants-bg.jpg)` }}
+        >
+          Pants
+        </Link>
+        <Link
+          to="/kitchen"
+          className="category-card"
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/category-backgrounds/kitchen-bg.jpg)` }}
+        >
+          Kitchen
+        </Link>
       </div>
 
-      {/* 💳 Payment link section */}
+
+      {/* Payment link section */}
       <div className="payment-link">
         <a
           href="https://www.bitpay.co.il/app/me/01E05C22-E728-EA49-59AF-9A543A0C267FBCE9"
