@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/clothing-store/static/css/main.00538311.css",
+    "main.css": "/clothing-store/static/css/main.f9e88521.css",
     "main.js": "/clothing-store/static/js/main.426d167d.js",
     "static/js/453.f262bf0d.chunk.js": "/clothing-store/static/js/453.f262bf0d.chunk.js",
     "index.html": "/clothing-store/index.html",
-    "main.00538311.css.map": "/clothing-store/static/css/main.00538311.css.map",
+    "main.f9e88521.css.map": "/clothing-store/static/css/main.f9e88521.css.map",
     "main.426d167d.js.map": "/clothing-store/static/js/main.426d167d.js.map",
     "453.f262bf0d.chunk.js.map": "/clothing-store/static/js/453.f262bf0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00538311.css",
+    "static/css/main.f9e88521.css",
     "static/js/main.426d167d.js"
   ]
 }
